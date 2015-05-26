@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Survey Form: Gender in Astronomy Talks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+
+    <!-- teh bootstraps -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="gender.css" rel="stylesheet">
+
+
+    <script>
+      function genderFunction(val) {
+        document.getElementById("questions").value += val;
+      }
+    </script>
+    <script>
+      function formSubmit() {
+      document.getElementById("mainform").submit();
+      }
+    </script>
+
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+      var sc_project=10140257;
+      var sc_invisible=1;
+      var sc_security="89a533e2";
+      var scJsHost = (("https:" == document.location.protocol) ?
+      "https://secure." : "http://www.");
+      document.write("<sc"+"ript type='text/javascript' src='" +
+	 scJsHost+
+	 "statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <!-- End of StatCounter Code for Default Guide -->
+
+  </head>
+
+  <body>
+    <div class="container" >
+      <form class="form-signin" role="form" id="mainform" action="submit.php" method="POST">
+        <h1 class="form-signin-heading">Gender in Astro Talks</h1>
+
+	<!-- Collecting data on the speakers and questioners in AAS talks. Forward all questions and comments to @jradavenport -->
+
+	<h2><u> Speaker </u> </h2>
+	<div class="form-group">
+	  <label for="sessionID">Talk ID</label>
+	  <input type="text" placeholder="e.g. 123.45 or Speaker Name" class="form-control" id="sessionID" name="sessionID">
+	</div>
+
+
+  <label for="SpeakerGenderBtns">Speaker Gender</label>
+	<div class="btn-group-justified" data-toggle="buttons">
+
+    <label class="btn btn-lg btn-default" >
+            <input type="radio" name="speakerGender" id="SpeakerGenderBtns" autocomplete="off" value="F"> Female
+	  </label>
+	  <label class="btn btn-lg btn-default" >
+            <input type="radio" name="speakerGender" id="SpeakerGenderBtns" autocomplete="off" value="M"> Male
+	  </label>
+
+	</div>
+
+
+
+	<h2> <u> Questioners </u></h2>
+	<label for="SpeakerGenderBtns">Gender of Questioners</label>
+	<div class="btn-group btn-group-justified" role="group" aria-label="...">
+	  <div class="btn-group" role="group">
+	    <button type="button" class="btn btn-lg btn-default" onclick="genderFunction('F')">
+	      Female
+	    </button>
+	  </div>
+	  <div class="btn-group" role="group">
+	    <button type="button" class="btn btn-lg btn-default" onclick="genderFunction('M')">
+	      Male
+	    </button>
+	  </div>
+
+	  <!-- Use anchors instead of buttons due to mobile focus bug
+	    ... nope, didnt fix it-->
+	  <!-- <div class="btn-group" role="group">
+	    <a href="#" role="button" class="btn btn-lg btn-default" onclick="genderFunction('F')">
+	      Female
+	    </a>
+	  </div>
+	  <div class="btn-group" role="group">
+	    <a href="#" role="button" class="btn btn-lg btn-default" onclick="genderFunction('M')">
+	      Male
+	    </a>
+	  </div> anchor attempt-->
+	</div>
+
+	
+	<input type="text" class="form-control" id="questions" name="questions" placeholder="In order asked - Use buttons above.">
+
+	<br>
+	<label for="OpenComments">Any Comments?</label>
+	<textarea class="form-control" rows="2" name="OpenComments" placeholder=""></textarea>
+	
+	<br>
+
+	<button type="submit" class="btn btn-lg btn-primary btn-block">Submit Data</button>
+
+	<h3> <u> About </u> </h3>
+	This ongoing study is collecting gender data on the speakers and questioners in science talks. See <a href="http://jradavenport.github.io/2014/11/08/gender.html">this page</a> for more information. Send questions or comments to <a href="http://twitter.com/jradavenport">@jradavenport</a>.
+
+	<br>
+	<img src="aas_225web_banner_sm.png" class="img-responsive" alt="AAS 225">
+      </form>
+
+
+
+    </div> <!-- /container -->
+
+
+
+  </body>
+</html>
