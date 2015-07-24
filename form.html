@@ -30,7 +30,6 @@
 
     <!-- You could cut/paste your statcounter or google analytics code here -->
     
-
   </head>
 
   <body>
@@ -40,49 +39,49 @@
 
 	<!-- Collecting data on the speakers and questioners in AAS talks. Forward all questions and comments to @jradavenport -->
 
-	<h2><u> Speaker </u> </h2>
+	<!-- <h2><u> Speaker </u> </h2> -->
 	<div class="form-group">
 	  <label for="sessionID">Talk ID</label>
-	  <input type="text" placeholder="e.g. 123.45 or Speaker Name" class="form-control" id="sessionID" name="sessionID">
+	  <input type="text" placeholder="e.g. FM13.6.02 or Speaker Name" class="form-control" id="sessionID" name="sessionID">
 	</div>
+
+    <label for="ChairGenderBtns">Chair Gender</label>
+    	<div class="btn-group-justified" data-toggle="buttons">
+
+        <label class="btn btn-default" >
+                <input type="radio" name="chairGender" id="ChairGenderBtns" autocomplete="off" value="F"> Female
+    	  </label>
+    	  <label class="btn btn-default" >
+                <input type="radio" name="chairGender" id="ChairGenderBtns" autocomplete="off" value="M"> Male
+    	  </label>
+
+      </div>
 
 
   <label for="SpeakerGenderBtns">Speaker Gender</label>
 	<div class="btn-group-justified" data-toggle="buttons">
 
-    <label class="btn btn-lg btn-default" >
+    <label class="btn btn-default" >
             <input type="radio" name="speakerGender" id="SpeakerGenderBtns" autocomplete="off" value="F"> Female
 	  </label>
-	  <label class="btn btn-lg btn-default" >
+	  <label class="btn btn-default" >
             <input type="radio" name="speakerGender" id="SpeakerGenderBtns" autocomplete="off" value="M"> Male
 	  </label>
 
 	</div>
 
-  <label for="ChairGenderBtns">Chair Gender</label>
-	<div class="btn-group-justified" data-toggle="buttons">
-
-    <label class="btn btn-lg btn-default" >
-            <input type="radio" name="chairGender" id="ChairGenderBtns" autocomplete="off" value="F"> Female
-	  </label>
-	  <label class="btn btn-lg btn-default" >
-            <input type="radio" name="chairGender" id="ChairGenderBtns" autocomplete="off" value="M"> Male
-	  </label>
-
-	</div>
 
 
-
-	<h2> <u> Questioners </u></h2>
+	<!-- <h2> <u> Questioners </u></h2> -->
 	<label for="QuestionerGenderBtns">Gender of Questioners</label>
 	<div class="btn-group btn-group-justified" role="group" aria-label="...">
 	  <div class="btn-group" role="group">
-	    <button type="button" class="btn btn-lg btn-default" onclick="genderFunction('F')">
+	    <button type="button" class="btn btn-default" onclick="genderFunction('F')">
 	      Female
 	    </button>
 	  </div>
 	  <div class="btn-group" role="group">
-	    <button type="button" class="btn btn-lg btn-default" onclick="genderFunction('M')">
+	    <button type="button" class="btn btn-default" onclick="genderFunction('M')">
 	      Male
 	    </button>
 	  </div>
@@ -101,23 +100,25 @@
 	  </div> anchor attempt-->
 	</div>
 
-	
+
 	<input type="text" class="form-control" id="questions" name="questions" placeholder="In order asked - Use buttons above.">
 
 	<br>
 	<label for="OpenComments">Any Comments?</label>
 	<textarea class="form-control" rows="2" name="OpenComments" placeholder=""></textarea>
-	
+
 	<br>
 
-	<button type="submit" class="btn btn-lg btn-primary btn-block">Submit Data</button>
+	<button type="submit" class="btn btn btn-primary btn-block">Submit Data</button>
 
 	<h3> <u> About </u> </h3>
-	This ongoing study is collecting gender data on the speakers and questioners in science talks. See <a href="http://jradavenport.github.io/2014/11/08/gender.html">this page</a> for more information. Send questions or comments to <a href="http://twitter.com/jradavenport">@jradavenport</a>.
+	This ongoing study is collecting gender data on speakers and questioners in science talks. See <a href="http://jradavenport.github.io/2014/11/08/gender.html">this page</a> for more information. Send questions or comments to <a href="http://twitter.com/jradavenport">@jradavenport</a>.
 
 	<br>
-	<img src="aas_225web_banner_sm.png" class="img-responsive" alt="AAS 225">
-      </form>
+
+    <img src="IAU_logo.png" class="img-responsive center-block" alt="AAS 225">
+
+    </form>
 
 
 
