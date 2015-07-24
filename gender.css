@@ -1,3 +1,9 @@
+@media(max-width: 500px){
+    h1 {
+	font-size: 18pt;
+    }
+}
+
 body {
   padding-top: 1px;
   padding-bottom: 4px;
