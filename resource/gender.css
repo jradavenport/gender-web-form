@@ -7,7 +7,8 @@
 body {
   padding-top: 1px;
   padding-bottom: 4px;
-  background-color: #fff;
+  background-color: #333;
+  color: #fff!important;
 }
 
 .form-signin {
@@ -34,3 +35,21 @@ body {
 .form-signin .form-control:focus {
   z-index: 2;
 }
+.buttonfemale {
+  background-color: #c6ecd9!important;
+  }
+.buttonfemale:hover, buttonfemale:active, buttonfemale:focus {
+  background-color: #339966!important;
+  box-shadow: none;
+  }
+.buttonmale {
+  background-color: #b3d9ff!important;
+  }
+.buttonmale:hover {
+  background-color: #0066cc!important;
+  }
+.buttonmale:focus {
+  background-color: #0066cc!important;
+  }
+  
+  
