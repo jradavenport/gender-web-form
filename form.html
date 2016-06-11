@@ -18,7 +18,7 @@
 
     <script>
       function genderFunction(val) {
-        document.getElementById("questions").value += val;
+        document.getElementById("questions").value += val+",";
       }
     </script>
     <script>
@@ -90,18 +90,32 @@ alt="shopify analytics ecommerce"></a></div></noscript>
 
 
 	<!-- <h2> <u> Questioners </u></h2> -->
-	<label for="QuestionerGenderBtns">Gender of Questioners</label>
-	<div class="btn-group btn-group-justified" role="group" aria-label="...">
-	  <div class="btn-group" role="group">
-	    <button type="button" class="btn btn-default" onclick="genderFunction('F')">
-	      Female
-	    </button>
-	  </div>
-	  <div class="btn-group" role="group">
-	    <button type="button" class="btn btn-default" onclick="genderFunction('M')">
-	      Male
-	    </button>
-	  </div>
+	<label for="QuestionerGenderBtns">Q&A: Gender and Question-Type</label>
+		<div class="btn-group btn-group-justified" role="group" aria-label="...">
+	  		<div class="btn-group" role="group">
+	    		<button type="button" class="btn btn-default" onclick="genderFunction('F:Q')">
+	      		Female, Question
+	    		</button>
+	  		</div>
+	  		<div class="btn-group" role="group">
+	    		<button type="button" class="btn btn-default" onclick="genderFunction('M:Q')">
+	      		Male, Question
+	    		</button>
+	  		</div>
+	  	</div>
+	  	<div class="btn-group btn-group-justified" role="group" aria-label="...">
+	  		<div class="btn-group" role="group">
+	    		<button type="button" class="btn btn-default" onclick="genderFunction('F:C')">
+	      		Female, Comment
+	    		</button>
+	  		</div>
+	  		<div class="btn-group" role="group">
+	    		<button type="button" class="btn btn-default" onclick="genderFunction('M:C')">
+	      		Male, Comment
+	    		</button>
+	  		</div>	
+	  		
+	  
 
 	  <!-- Use anchors instead of buttons due to mobile focus bug
 	    ... nope, didnt fix it-->
@@ -115,13 +129,14 @@ alt="shopify analytics ecommerce"></a></div></noscript>
 	      Male
 	    </a>
 	  </div> anchor attempt-->
-	</div>
+	  
+		</div>
 
 
 	<input type="text" class="form-control" id="questions" name="questions" placeholder="In order asked - Use buttons above.">
 
 	<br>
-	<label for="OpenComments">Any Comments?</label>
+	<label for="OpenComments">Additional Information?</label>
 	<textarea class="form-control" rows="2" name="OpenComments" placeholder=""></textarea>
 
 	<br>
